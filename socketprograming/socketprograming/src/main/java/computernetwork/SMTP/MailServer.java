@@ -17,8 +17,8 @@ class MailServer {
   {
      
      int delay = 1000;
-     String user = "computernetwork833@gmail.com";
-     String pass = "dwqfypqfxbacjuhc"; 
+     String user = "mygmail";
+     String pass = "mygmailpassword"; 
      
      String username = Base64.getEncoder().encodeToString(user.getBytes());
      String password = Base64.getEncoder().encodeToString(pass.getBytes());
@@ -84,7 +84,7 @@ class MailServer {
      Thread.sleep(delay);
      send(password + "\r\n");
      Thread.sleep(delay);
-     send("MAIL FROM:<computerNetwork833@gmail.com>\r\n");
+     send("MAIL FROM:<mygmail>\r\n");
      Thread.sleep(delay);
      send("RCPT TO:<" + recipient +">\r\n");
      Thread.sleep(delay);
